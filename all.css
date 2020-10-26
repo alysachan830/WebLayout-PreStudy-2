@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css */
+*{
+    text-decoration: none;
+}
+
+/* 私有class */
+body{
+    font-family: PingFangTC-Regular,sans-serif;
+}
+
+.header-logo{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg');
+    width: 200px;
+    height: 30px;
+    background-repeat: no-repeat;
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow: hidden;
+}
+
+.top-nav:hover{
+    background: #EAF0ED;
+    border-radius: 2px;
+}
+
+.banner{
+    width: 942px;
+}
+
+.tag{
+    left: 36px;
+}
+
+.icon-like{
+    top: 12px;
+    right: 12px;
+}
+
+.page-number{
+    width: 54px;
+    height: 54px;
+    box-sizing: border-box;
+}
+
+.page-number:hover{
+    background: #EAF0ED;
+}
+
+/* 共用class */
+.container{
+    width: 942px;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.my-3{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.mr-3{
+    margin-right: 16px;
+}
+
+.mb-4{
+    margin-bottom: 24px;
+}
+
+.ml-3{
+    margin-left: 16px;
+}
+
+.px-2{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.px-3{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.px-4{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.px-6{
+    padding-right: 72px;
+    padding-left: 72px;
+}
+
+.py-2{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-3{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-4{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.pr-3{
+    padding-right: 16px;
+}
+
+.pb-4{
+    padding-bottom: 24px;
+}
+
+.pl-3{
+    padding-left: 16px;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.h4{
+    font-size: 24px;
+}
+
+.h5{
+    font-size: 20px;
+}
+
+.word-spacing-1{
+    letter-spacing: 4px;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-vertical{
+    writing-mode: vertical-rl;
+}
+
+.text-nowrap{
+    white-space: nowrap;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+
+.text-primary{
+    color: #3F5D45;
+}
+
+.text-light{
+    color: #fff;
+}
+
+.bg-primary{
+    background: #3F5D45;
+}
+
+.bg-secondary{
+    background: #EAF0ED;
+}
+
+.border{
+    border: 1px solid #EAF0ED;
+}
+
+.border-right{
+    border-right: 1px solid #EAF0ED;
+}
+
+.border-left{
+    border-left: 1px solid #EAF0ED;
+}
+
+.border-top-0{
+    border-top: 0px solid transparent;
+}
+
+.col-4{
+    width: 314px;
+    box-sizing: border-box;
+}
+
+.btn{
+    display: block;
+    padding: 24px 72px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.btn-primary{
+    font-size: 24px;
+    color: #3F5D45;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background: #EAF0ED;
+}
+
+.btn-secondary{
+    font-size: 24px;
+    font-weight: bold;
+    color: #3F5D45;
+    background: #EAF0ED;
+}
+
+.btn-secondary:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
