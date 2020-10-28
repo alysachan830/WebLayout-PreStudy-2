@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="all.css">
 </head>
 <body>
-    <div class="container mx-auto py-4">
+    <div class="container">
         <header class="d-flex mb-4 justify-content-between align-items-center">
             <h1> 
                 <a class="header-logo d-block" href="#">
@@ -34,29 +34,29 @@
         </header>
         
         
-        <img class="banner d-block mb-4" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png" alt="banner">
+        <img class="d-block mb-4" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png" alt="banner">
         
         <div class="d-flex">
-            <ul class="col-4">
-                <li>
-                    <a class="btn h4 text-light font-weight-bold bg-primary" href="#">甜點類別</a>
-                </li>
-                <li>
-                    <a class="btn btn-primary border border-top-0" href="#">所有甜點（48）</a>
-                </li>
-                <li>
-                    <a class="btn btn-primary border border-top-0" href="#">本日精選（10）</a>
-                </li>
-                <li>
-                    <a class="btn btn-primary border border-top-0" href="#">人氣推薦（26）</a>
-                </li>
-                <li>
-                    <a class="btn btn-primary border border-top-0" href="#">新品上市（12）</a>
-                </li>
-            </ul>
+            <div class="menu">
+                <h2 class="btn h4 text-light bg-primary">甜點類別</h2>
+                <ul>
+                    <li>
+                        <a class="btn btn-primary border border-top-0" href="#">所有甜點（48）</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-primary border border-top-0" href="#">本日精選（10）</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-primary border border-top-0" href="#">人氣推薦（26）</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-primary border border-top-0" href="#">新品上市（12）</a>
+                    </li>
+                </ul>
+            </div>
             
-            <ul class="d-flex flex-wrap">
-                <li class="col-4 pl-3 pb-4 overflow-hidden position-relative">
+            <ul class="product-list d-flex justify-content-between">
+                <li class="pb-4 position-relative">
 
                     <div class="tag px-2 py-2 position-absolute text-vertical word-spacing-1 bg-primary text-light">本日精選</div>
 
@@ -66,15 +66,14 @@
 
                     <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png" alt="product image">
 
-                    <ul class="d-flex justify-content-around border-right border-left">
-                        <li class="h5 px-4 py-3 text-primary">焦糖馬卡龍</li>
-                        <li class="border-right"></li>
-                        <li class="h5 px-4 py-3 text-primary">NT$ 450</li>
-                    </ul>
+                    <div class="d-flex h5 text-center align-items-center border-left border-right">
+                        <h3 class="product-name py-3 border-right text-primary">焦糖馬卡龍</h3>
+                        <span class="product-price text-primary">NT $450</span>
+                    </div>
                     <a class="btn btn-secondary" href="#">加入購物車</a>
                 </li>
 
-                <li class="col-4 pl-3 pb-4 overflow-hidden position-relative">
+                <li class="pb-4 position-relative">
 
                     <div class="tag px-2 py-2 position-absolute text-vertical word-spacing-1 bg-primary text-light">本日精選</div>
 
@@ -82,17 +81,16 @@
                         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="like icon">
                     </a>
 
-                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-2.png" alt="product">
+                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-2.png" alt="product image">
 
-                    <ul class="d-flex justify-content-around border-right border-left">
-                        <li class="h5 px-4 py-3 text-primary">焦糖馬卡龍</li>
-                        <li class="border-right"></li>
-                        <li class="h5 px-4 py-3 text-primary">NT$ 450</li>
-                    </ul>
+                    <div class="d-flex h5 text-center align-items-center border-left border-right">
+                        <h3 class="product-name py-3 border-right text-primary">焦糖馬卡龍</h3>
+                        <span class="product-price text-primary">NT $450</span>
+                    </div>
                     <a class="btn btn-secondary" href="#">加入購物車</a>
                 </li>
 
-                <li class="col-4 pl-3 pb-4 overflow-hidden position-relative">
+                <li class="pb-4 position-relative">
 
                     <div class="tag px-2 py-2 position-absolute text-vertical word-spacing-1 bg-primary text-light">本日精選</div>
 
@@ -100,17 +98,16 @@
                         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="like icon">
                     </a>
 
-                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-3.png" alt="product">
+                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-3.png" alt="product image">
 
-                    <ul class="d-flex justify-content-around border-right border-left">
-                        <li class="h5 px-4 py-3 text-primary">焦糖馬卡龍</li>
-                        <li class="border-right"></li>
-                        <li class="h5 px-4 py-3 text-primary">NT$ 450</li>
-                    </ul>
+                    <div class="d-flex h5 text-center align-items-center border-left border-right">
+                        <h3 class="product-name py-3 border-right text-primary">焦糖馬卡龍</h3>
+                        <span class="product-price text-primary">NT $450</span>
+                    </div>
                     <a class="btn btn-secondary" href="#">加入購物車</a>
                 </li>
 
-                <li class="col-4 pl-3 pb-4 overflow-hidden position-relative">
+                <li class="pb-4 position-relative">
 
                     <div class="tag px-2 py-2 position-absolute text-vertical word-spacing-1 bg-primary text-light">本日精選</div>
 
@@ -118,17 +115,16 @@
                         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="like icon">
                     </a>
 
-                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-4.png" alt="product">
+                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-4.png" alt="product image">
 
-                    <ul class="d-flex justify-content-around border-right border-left">
-                        <li class="h5 px-4 py-3 text-primary">焦糖馬卡龍</li>
-                        <li class="border-right"></li>
-                        <li class="h5 px-4 py-3 text-primary">NT$ 450</li>
-                    </ul>
+                    <div class="d-flex h5 text-center align-items-center border-left border-right">
+                        <h3 class="product-name py-3 border-right text-primary">焦糖馬卡龍</h3>
+                        <span class="product-price text-primary">NT $450</span>
+                    </div>
                     <a class="btn btn-secondary" href="#">加入購物車</a>
                 </li>
 
-                <li class="col-4 pl-3 pb-4 overflow-hidden position-relative">
+                <li class="pb-4 position-relative">
 
                     <div class="tag px-2 py-2 position-absolute text-vertical word-spacing-1 bg-primary text-light">本日精選</div>
 
@@ -136,17 +132,16 @@
                         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="like icon">
                     </a>
 
-                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-5.png" alt="product">
+                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-5.png" alt="product image">
 
-                    <ul class="d-flex justify-content-around border-right border-left">
-                        <li class="h5 px-4 py-3 text-primary">焦糖馬卡龍</li>
-                        <li class="border-right"></li>
-                        <li class="h5 px-4 py-3 text-primary">NT$ 450</li>
-                    </ul>
+                    <div class="d-flex h5 text-center align-items-center border-left border-right">
+                        <h3 class="product-name py-3 border-right text-primary">焦糖馬卡龍</h3>
+                        <span class="product-price text-primary">NT $450</span>
+                    </div>
                     <a class="btn btn-secondary" href="#">加入購物車</a>
                 </li>
 
-                <li class="col-4 pl-3 pb-4 overflow-hidden position-relative">
+                <li class="pb-4 position-relative">
 
                     <div class="tag px-2 py-2 position-absolute text-vertical word-spacing-1 bg-primary text-light">本日精選</div>
 
@@ -154,42 +149,43 @@
                         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="like icon">
                     </a>
 
-                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-6.png" alt="product">
+                    <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-6.png" alt="product image">
 
-                    <ul class="d-flex justify-content-around border-right border-left">
-                        <li class="h5 px-4 py-3 text-primary">焦糖馬卡龍</li>
-                        <li class="border-right"></li>
-                        <li class="h5 px-4 py-3 text-primary">NT$ 450</li>
-                    </ul>
+                    <div class="d-flex h5 text-center align-items-center border-left border-right">
+                        <h3 class="product-name py-3 border-right text-primary">焦糖馬卡龍</h3>
+                        <span class="product-price text-primary">NT $450</span>
+                    </div>
                     <a class="btn btn-secondary" href="#">加入購物車</a>
                 </li>
   
             </ul>
         </div>
 
-        <div class="d-flex justify-content-end">
+        <div class="page-number-list d-flex">
             <ul class="d-flex border">
                 <li>
-                    <a class="page-number d-flex justify-content-center align-items-center" href="#">
+                    <a class="page-number-arrow d-block h4 text-center text-primary" href="#">
                         <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_left.png" alt="left arrow">
                     </a>
                 </li>
-                <li>
-                    <a class="page-number d-block h4 py-3 border-left text-center text-primary" href="#">1</a>
+
+                <li class="border-left">
+                    <a class="page-number d-block h4 text-center text-primary" href="#">1</a>
                 </li>
-                <li>
-                    <a class="page-number d-block h4 py-3 border-left text-center text-primary" href="#">2</a>
+
+                <li class="border-left">
+                    <a class="page-number d-block h4 text-center text-primary" href="#">2</a>
                 </li>
-                <li>
-                    <a class="page-number d-block h4 py-3 border-left text-center text-primary" href="#">3</a>
+
+                <li class="border-left">
+                    <a class="page-number d-block h4 text-center text-primary" href="#">3</a>
                 </li>
-                
-                <li>
-                    <a class="page-number d-flex justify-content-center align-items-center border-left" href="#">
-                        <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_right.png" alt="right arrow">
+
+                <li class="border-left">
+                    <a class="page-number-arrow d-block h4 text-center text-primary" href="#">
+                        <img class="d-block" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_right.png" alt="left arrow">
                     </a>
                 </li>
-                
             </ul>
         </div>
     </div>

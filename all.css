@@ -50,11 +50,22 @@ table {
 /* my css */
 *{
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+*:before,*:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: PingFangTC,sans-serif;
 }
 
 /* 私有class */
-body{
-    font-family: PingFangTC-Regular,sans-serif;
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 24px 0;
 }
 
 .header-logo{
@@ -72,8 +83,13 @@ body{
     border-radius: 2px;
 }
 
-.banner{
-    width: 942px;
+.menu{
+    width: 300px;
+}
+
+.product-list{
+    margin-left: 20px;
+    flex-wrap: wrap;
 }
 
 .tag{
@@ -85,40 +101,31 @@ body{
     right: 12px;
 }
 
-.page-number{
-    width: 54px;
-    height: 54px;
-    box-sizing: border-box;
+.product-name,.product-price{
+    width: 50%;
 }
 
-.page-number:hover{
+.product-name{
+    font-weight: 200;
+}
+
+.page-number-list{
+    justify-content: flex-end;
+}
+
+.page-number{
+    padding: 18px 23px;
+}
+
+.page-number:hover,.page-number-arrow:hover{
     background: #EAF0ED;
 }
 
+.page-number-arrow{
+    padding: 18px 18px;
+}
+
 /* 共用class */
-.container{
-    width: 942px;
-}
-
-.mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.my-auto{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.my-3{
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.mr-3{
-    margin-right: 16px;
-}
-
 .mb-4{
     margin-bottom: 24px;
 }
@@ -132,19 +139,9 @@ body{
     padding-left: 8px;
 }
 
-.px-3{
-    padding-right: 16px;
-    padding-left: 16px;
-}
-
 .px-4{
     padding-right: 24px;
     padding-left: 24px;
-}
-
-.px-6{
-    padding-right: 72px;
-    padding-left: 72px;
 }
 
 .py-2{
@@ -157,21 +154,8 @@ body{
     padding-bottom: 16px;
 }
 
-.py-4{
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.pr-3{
-    padding-right: 16px;
-}
-
 .pb-4{
     padding-bottom: 24px;
-}
-
-.pl-3{
-    padding-left: 16px;
 }
 
 .d-block{
@@ -194,20 +178,12 @@ body{
     letter-spacing: 4px;
 }
 
-.font-weight-bold{
-    font-weight: bold;
-}
-
 .text-center{
     text-align: center;
 }
 
 .text-vertical{
     writing-mode: vertical-rl;
-}
-
-.text-nowrap{
-    white-space: nowrap;
 }
 
 .position-relative{
@@ -218,34 +194,13 @@ body{
     position: absolute;
 }
 
-.flex-wrap{
-    flex-wrap: wrap;
-}
-
 .justify-content-between{
     justify-content: space-between;
-}
-
-.justify-content-center{
-    justify-content: center;
-}
-
-.justify-content-end{
-    justify-content: flex-end;
-}
-
-.justify-content-around{
-    justify-content: space-around;
 }
 
 .align-items-center{
     align-items: center;
 }
-
-.overflow-hidden{
-    overflow: hidden;
-}
-
 
 .text-primary{
     color: #3F5D45;
@@ -277,11 +232,6 @@ body{
 
 .border-top-0{
     border-top: 0px solid transparent;
-}
-
-.col-4{
-    width: 314px;
-    box-sizing: border-box;
 }
 
 .btn{
